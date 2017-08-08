@@ -1,15 +1,21 @@
-##### String sang json
+##### String to json
+```php
 	json_decode(str, true)
+```
 
-
-##### Json sang string 
+##### Json to string 
+```php
 	json_encode(js)
+```
 
-
-##### Object sang json
+##### Object to json
+```php
 	json_encode(obj)
+```
 
 ##### Merge json
+```php
 	array_merge(js1, js2)
+	```
 
 
