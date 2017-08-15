@@ -1,97 +1,37 @@
 from datetime import datetime
 import time
 from time import gmtime, strftime
+import maya
+import pendulum
 
 
+# pip3 install maya pendulum
 class PhDateTime:
 
+    @staticmethod
+    def now():
+        return datetime.now()
 
-    '''
-        Get current time. 
-        Format: https://docs.python.org/2/library/time.html#time.strftime
-        Usage: 
-            PhDateTime.now('%Y-%m-%d %H:%M:%S')
-            PhDateTime.now()
-    '''
-    def now(format_str = None):
-        if format_str is None:
-            return datetime.now().strftime('%a, %d %b %Y %H:%M:%S +0000')
-        else:
-            return datetime.now().strftime(format_str)
-
-
-
-    '''
-        Get current system epoch
-        Usage: PhDateTime.epoch()
-    '''
     @staticmethod
     def epoch():
         return int(time.time())
 
-    '''
-        Convert epoch to format string
-        Usage: PhDateTime.epoch_to_local_time(epoch, "%d/%m/%Y %H:%m:%S")
-    '''
     @staticmethod
-    def epoch_to_local_time(epoch, format_str=None):
-
-        if  format_str is None:
-            return time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime(epoch))
+    def epoch_to_time(timezone=None):
+        if timezone is None:
+            return time.localtime(epoch)
         else:
-            return time.strftime(format_str, time.localtime(epoch))
+            local = pendulum.create(2016, 8, 7, 22, 24, 30, tz='Europe/Paris')
+            '2016-08-07T22:24:30+02:00'
+            in_paris.in_timezone('America/New_York')
 
-    # def epochToGmttime(self, epoch):
-    #     return time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
-    #
-    # def timezone(self):
-    #     return strftime("%z", gmtime())
-    #
-    # def timezoneOffset(self):
-    #     return time.tzname
 
-    '''
-        Usage: PhDateTime.day()
-    '''
+
     @staticmethod
-    def day():
-        return datetime.now().strftime("%d")
+    def get_local_timezone_name():
+        print (time.localtime().tm_isdst)
+        return maya.get_localzone()
 
-    '''
-        Usage: PhDateTime.month()
-    '''
     @staticmethod
-    def month():
-        return datetime.now().strftime("%m")
-
-    '''
-        Usage: PhDateTime.year()
-    '''
-    @staticmethod
-    def year():
-        return datetime.now().strftime("%Y")
-
-    '''
-        Usage: PhDateTime.hour()
-    '''
-    @staticmethod
-    def hour():
-        return datetime.now().strftime("%H")
-
-    '''
-        Usage: PhDateTime.minute()
-    '''
-    @staticmethod
-    def minute():
-        return datetime.now().strftime("%M")
-
-    '''
-        Usage: PhDateTime.second()
-    '''
-    @staticmethod
-    def second():
-        return datetime.now().strftime("%S")
-
-
-
-
+    def has_dst_effect():
+        return time.localtime().tm_isdst
