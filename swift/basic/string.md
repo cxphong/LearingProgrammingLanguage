@@ -3,6 +3,7 @@
 var s = "123";
 var s : String = "123";
 var s = String()
+String(format:"%d", i)
 ```
 
 #### Check empty

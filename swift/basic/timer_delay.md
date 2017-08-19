@@ -34,15 +34,16 @@ if (timer != nil) {
 
 ```Swift
 // Multiple parameter in selector
-timer = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: Selector("showAlert2:"), userInfo: ["title":"a title", "message": "a message", "controller": controller], repeats: false)
+Timer.scheduledTimer(timeInterval: 1,
+                             target: self,
+                             selector: #selector(updateSetting),
+                             userInfo: ["view":view],
+                             repeats: false)
 
-func showAlert2(timer: NSTimer) {   
-  let dict = timer.userInfo as NSDictionary
 
-  showAlert(dict["title"] as String, wwithMessage: dict["message"] as String, fromController: dict["controller"] as UIViewController)
-}
-
-func showAlert(alertTitle: String, withMessage alertMessage: String, fromController controller: UIViewController) {
-	//    do stuff...
+func updateSetting(timer: Timer) {
+  let dict = timer.userInfo as! NSDictionary
+  let view = dict["view"] as! DashBoardSetting
+  view.setupView()
 }
 ```
