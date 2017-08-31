@@ -1,19 +1,19 @@
-- Variable
-- Constant
-- Datatype
-- Log, print
+- ~~Variable~~
+- ~~Constant~~
+- ~~Datatype~~
+- ~~Log, print~~
 - Conditional
-- Loop
-- Array
+- ~~Loop~~
+- ~~Array~~
 - Collection
-- String
+- ~~String~~
 - Switch/case
-- Optional
-- Fucntion
+- ~~Optional~~
+- ~~Fucntion~~
 - Class
 - Closure
-- Enum
-- Protocol
+- ~~Enum~~
+- ~~Protocol~~
 - Type Cast
 - Timer, sleep
 - 
