@@ -16,3 +16,9 @@ true, false
 
 #### Optional
 var x : Int8?
+
+#### Byte array
+
+```Swift
+var array = [UInt8](count: 5, repeatedValue: 0x01)
+```
