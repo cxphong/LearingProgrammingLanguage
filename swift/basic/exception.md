@@ -49,5 +49,3 @@ func processFile(filename: String) throws {
   }
 }
 ```
-
-``` 
