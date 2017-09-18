@@ -42,3 +42,8 @@ println("Total items in intsA = \(intsA.count)")
 var intsC = [Int]()
 ```
 
+#### MAX, MIN
+```swift
+array.max()
+array.min()
+```

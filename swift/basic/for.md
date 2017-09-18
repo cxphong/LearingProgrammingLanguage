@@ -14,3 +14,12 @@ for i in stride(from: 0.0, to: 1.0, by: 0.1) {
     print("scroll to bottom")
 }
 ```
+
+```Swift
+// i = 0,0,1,..., 1.0
+for i in stride(from: 0.0, through: 1.0, by: 0.1) {
+    self.progress = 1.0
+    self.layoutSubviews()
+    print("scroll to bottom")
+}
+```

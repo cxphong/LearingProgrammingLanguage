@@ -20,5 +20,5 @@ var x : Int8?
 #### Byte array
 
 ```Swift
-var array = [UInt8](count: 5, repeatedValue: 0x01)
+var array = [UInt8](repeating: 2, count: 2)
 ```
