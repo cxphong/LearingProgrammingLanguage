@@ -1,8 +1,8 @@
 ##### Main UI
 ```swift
-	DispatchQueue.main.async {
-		// code
-	}
+DispatchQueue.main.async {
+	// code
+}
 ```
 
 
