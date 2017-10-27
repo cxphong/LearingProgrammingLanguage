@@ -46,6 +46,19 @@ someDict.count
 var someDict3:[Int:String] = [Int:String]()
 ```
 
+#### Add new entry
+
+```swift
+// Initialize the Dictionary
+var dict = ["name": "John", "surname": "Doe"]
+ 
+// Add a new key with a value
+
+dict["email"] = "john.doe@email.com"
+
+print(dict)
+```
+
 
 
 
