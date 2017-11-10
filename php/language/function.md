@@ -1,5 +1,6 @@
 #### 1. **Return multiple value**
 
+```php
 <?php
 
 
@@ -21,3 +22,4 @@ function tmp()
 // ABC
 // DEF
 // GHK
+```
