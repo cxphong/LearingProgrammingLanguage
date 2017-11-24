@@ -13,3 +13,15 @@ for (e in array) {
   println(e)
 }
 ```
+
+```kotlin
+// size
+println(array.size)
+
+// get
+println(array.get(0))
+
+// set
+array.set(0,22)
+println(array.get(0))
+```
