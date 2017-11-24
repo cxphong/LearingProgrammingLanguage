@@ -22,5 +22,5 @@ var x2 : Short = 5
 var x3 : Int = 5
 var x4 : Long = 4
 var x5 : Float = 4.4f
-var x6: Double = 5.6 
+var x6 : Double = 5.6 
 ```
