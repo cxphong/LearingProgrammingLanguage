@@ -23,4 +23,8 @@ var x3 : Int = 5
 var x4 : Long = 4
 var x5 : Float = 4.4f
 var x6 : Double = 5.6 
+
+// Literal
+Binaries: 0b00001011
+1_000_999 // = 1000999
 ```
