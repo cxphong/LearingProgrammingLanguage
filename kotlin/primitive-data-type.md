@@ -9,6 +9,9 @@ val x : String = "xyz"
 // String
 var name = "Jone"
 
+val i = 10
+val s = "i = $i" // evaluates to "i = 10"
+
 // Character
 var x = 'x'
 
