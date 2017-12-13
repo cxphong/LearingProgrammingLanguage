@@ -44,3 +44,25 @@ class Person {
 }
 
 ```
+
+```Kotlin
+#Inheritance
+class Student(age: Int, name: String, grade: Int) : Person(age, name) {
+    private var grade : Int = 0;
+
+    init {
+        this.grade = grade
+    }
+
+    fun getGrade() : Int {
+        return this.grade
+    }
+
+    fun setGrade(grade : Int) {
+        this.grade = grade
+    }
+}
+
+...
+var student = Student(8, "Tom", 2)
+```
