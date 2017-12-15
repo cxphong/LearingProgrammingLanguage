@@ -45,6 +45,31 @@ class Person {
 
 ```
 
+```kotlin
+// class
+open class Person(var age: Int, var name: String) {
+
+}
+
+class Student(age: Int, name: String, var grade: Int) : Person(age, name) {
+}
+
+ var student = Student(8, "Tom", 2)
+
+println(student.age)
+println(student.name)
+println(student.grade)
+
+student.age = 26
+student.name = "phong"
+student.grade = 12
+
+println(student.age)
+println(student.name)
+println(student.grade)
+
+```
+
 ```Kotlin
 #Inheritance
 class Student(age: Int, name: String, grade: Int) : Person(age, name) {
