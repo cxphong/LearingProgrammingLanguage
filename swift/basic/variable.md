@@ -21,3 +21,10 @@ let x = true
 let y = false
 ```
 
+#### Casting
+
+```swift
+let x : Double = 5.9
+let y : CGFloat  = (CGFloat)x 
+```
+
