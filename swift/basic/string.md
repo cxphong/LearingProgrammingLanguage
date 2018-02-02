@@ -39,9 +39,8 @@ let stringB = String("Hello, Swift!")
 stringB + = "--Readers--"
 println( stringB )
 ```
-
-##### Iterpolation 
-````swift
+#### Iterpolation 
+```swift
 var varA   = 20
 let constA = 100
 var varC:Float = 20.0
@@ -50,6 +49,12 @@ var stringA = "\(varA) times \(constA) is equal to \(varC * 100)"
 println( stringA )
 ```
 
+### Trim
+```Swift
+let str = "  Taylor Swift  "
+let trimmed = str.trimmingCharacters(in: .whitespacesAndNewlines)
+# Result: "Taylor Swift"
+```
 #### Concatentation
 ```swift
 let constA = "Hello,"
