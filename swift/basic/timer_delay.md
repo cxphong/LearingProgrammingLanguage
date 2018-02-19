@@ -1,20 +1,25 @@
 #### Delay
 
 ```Swift
-sleep(4) // Delay 4s
+// Delay 1s
+sleep(1)
+usleep(1000000) 
+nsleep(1000000000)
 ```
 
 ```Swift
-DispatchQueue.main.after(when: .now() + 10) { // Delay 10s
-	// Function
+DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+	NSLog("delay")
 }
 ```
 
 ```Swift
-self.perform(#selector(getBrightness), with: self, afterDelay: 2) // Delay 2s
+self.perform(#selector(self.getBrightness), with: self, afterDelay: 2) // Delay 2s
 
-func getBrightness() {
-       
+...
+
+@objc func getBrightness() {
+    NSLog("getBrightness")
 }
 ```
 
