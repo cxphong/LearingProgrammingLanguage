@@ -28,6 +28,7 @@ let timer = Timer.scheduledTimer(timeInterval: 1.0,
                                          userInfo: 8,
                                          repeats: true)
 ...
+
 @objc func xxx(timer : Timer) {
 	NSLog("Method ... \(timer.userInfo)")
 }
