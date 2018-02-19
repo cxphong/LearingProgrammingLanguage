@@ -22,28 +22,20 @@ func getBrightness() {
 
 ```Swift
 // start
-timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.getConnected), userInfo: nil, repeats: true)
+let timer = Timer.scheduledTimer(timeInterval: 1.0,
+                                         target: self,
+                                         selector: #selector(self.xxx(timer:)),
+                                         userInfo: 8,
+                                         repeats: true)
+...
+@objc func xxx(timer : Timer) {
+	NSLog("Method ... \(timer.userInfo)")
+}
 ```
 
 ```Swift
 // stop
 if (timer != nil) {
     timer.invalidate()
-}
-```
-
-```Swift
-// Multiple parameter in selector
-Timer.scheduledTimer(timeInterval: 1,
-                             target: self,
-                             selector: #selector(updateSetting),
-                             userInfo: ["view":view],
-                             repeats: false)
-
-
-func updateSetting(timer: Timer) {
-  let dict = timer.userInfo as! NSDictionary
-  let view = dict["view"] as! DashBoardSetting
-  view.setupView()
 }
 ```
