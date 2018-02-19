@@ -23,3 +23,10 @@ for i in stride(from: 0.0, through: 1.0, by: 0.1) {
     print("scroll to bottom")
 }
 ```
+
+```Swift
+// 0, 1, 2, 3, 4, 5
+for index in 0...5 {
+   NSLog("index \(index)")
+}
+```
