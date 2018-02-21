@@ -33,4 +33,4 @@ var device02 = device01.copy(with: nil) as! Device
 device01.mac = "5678"
 
 NSLog("\(device01.mac!) \(device02.mac!)") // 5678 5678
-``swift
+```swift
