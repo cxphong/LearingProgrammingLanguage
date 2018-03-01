@@ -39,3 +39,26 @@ func executeOperation() {
         block.cancel()
     }
   ```
+  
+  ```swift
+  // Dependency
+   func demoDependencyOperation() {
+        let block1 = BlockOperation {
+            NSLog("block1")
+        }
+        
+        let block2 = BlockOperation {
+            NSLog("block2")
+        }
+        
+        let queue = OperationQueue()
+        
+        block1.addDependency(block2)
+        queue.addOperation(block1)
+        queue.addOperation(block2)
+        
+        // result stdout:
+        // "block2"
+        // "block1"
+    }
+  ```
