@@ -80,3 +80,8 @@ if varA == varB {
 	
 }
 ```
+
+#### Split
+```swift
+self.mac = name.components(separatedBy: "-")[2]
+```
