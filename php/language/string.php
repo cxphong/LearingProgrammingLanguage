@@ -13,4 +13,16 @@
 	$str2 = "DEF";
 
 	$str3 = $str1.$str2;
+
+	// Remove all space
+	$phone = preg_replace('/\s+/', '', $phone);
+
+	// Check contain substring
+	strpos("1255255", "255", 0) // output is 1
+	strpos("1255255", "255", 4) // output is 4
+	strpos("1255255", "2555", 4) // output is FALSE
+	
+	// Remove first 3 characters
+	$str = substr($str, 3);
+
 ?>
