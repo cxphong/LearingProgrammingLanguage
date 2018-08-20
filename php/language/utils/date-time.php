@@ -12,6 +12,6 @@
 	$diff->invert // 0: posstive, 1: negative
 
 	// Convert string time to datetime
-	$token_end_date = date("d.m.Y", strtotime($device->token_end_date));
+	 $report_month = DateTime::createFromFormat('m/Y', '09/2018');
 
 ?>
