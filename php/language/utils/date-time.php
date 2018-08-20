@@ -1,8 +1,10 @@
 <?php
 
+	// Datetime to String
+	$datetime->format('Y-m-d H:i:s');
+
 	// Now
 	$datetime = new DateTime();
-	$datetime->format('Y-m-d H:i:s');
 
 	// Day diff 
 	$diff = date_diff($date1,$date2); //+272 days
